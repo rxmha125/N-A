@@ -51,7 +51,27 @@
         // If age is 18 or older, create a new window and load the content
         const newWindow = window.open("", "_blank");
         newWindow.document.write(`
-        <a href="/Testing/index.html">Hi</a>
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>New Page</title>
+            <style>
+              .btn-1 {
+                background-color: red;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                margin-right: 5px;
+              }
+            </style>
+          </head>
+          <body>
+            <button class="btn-1">SUBSCRIBE</button>
+            <a href="https://youtube.com/@rxmha-y?si=qQEUdRH6cdbSHdaD">My YouTube Channel</a>
+          </body>
+          </html>
         `);
       } else if (age >= 100) {
         result.textContent = "You are too old.";
